@@ -27,6 +27,7 @@
     color: var(--text-dark);
 }
 
+
 .btn{
     padding: .75rem 2rem;
     outline: none;
@@ -118,6 +119,9 @@ main{
     display: flex;
     align-items: center;
     gap: 5rem;
+}
+.header__container{
+    padding: 70px;
 }
 
 .header__container h1{
@@ -273,8 +277,19 @@ main{
     gap: 2rem;
     align-items: center;
 }
+.contact__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
 
 .why__image img{
+    max-width: 400px;
+    margin: auto;
+    border-radius: 10px;
+}
+.contact__img{
     max-width: 400px;
     margin: auto;
     border-radius: 10px;
@@ -283,6 +298,12 @@ main{
     color: var(--text-light);
 }
 .why__grid{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 80px auto;
+    gap: 2rem;
+}
+.contact__grid{
     margin-top: 4rem;
     display: grid;
     grid-template-columns: 80px auto;
@@ -337,6 +358,26 @@ main{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+}
+.big{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(7.1fr);
+    gap: 2rem;
+}
+.doctors__card__imagess{
+    position: relative;
+    overflow: hidden;
+    
+}
+
+@keyframes moveGrid{
+    0%{transform: translateX();}
+    50%{transform: translateX(10px);}
+    100%{transform: translateX(0);}
+}
+.doctors__gridd{
+    animation: moveGrid 1s infinite ease-in-out;
 }
 
 .doctors__card{

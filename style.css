@@ -359,6 +359,9 @@ main{
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
+.menz{
+    color: var(--primary-color-dark);
+}
 .big{
     margin-top: 4rem;
     display: grid;

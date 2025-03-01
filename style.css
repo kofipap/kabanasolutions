@@ -1,10 +1,12 @@
 :root{
     --primary-color:#12ac8e;
     --primary-color-dark:#0d846c;
-    --secondary-color:#fb923c;
+    --secondary-color:#800020;
     --text-light:#767268;
     --white:#ffffff;
     --max-width: 1200px;
+    --black:black;
+    --champagne: #F7E7CE;
 
 }
 
@@ -42,6 +44,9 @@
     height: auto;
 }
 
+.logo{
+    color: var(--champagne);
+}
 img{
     width: 100%;
     display: flex;
@@ -57,8 +62,8 @@ body{
 header{
     background-image: linear-gradient(
         to right,
-        rgba(18, 172, 142, .9),
-        rgba(18,172,142, .7)
+        rgb(0,255,255),
+        rgb(0,255,255)
     ),
     url("header.jpg");
     background-position: center center;
@@ -70,6 +75,31 @@ header{
     z-index: 1000;
     width: 100%;
 
+}
+
+.header__video{
+    position: absolute;
+    width: 100%;
+    height: 73vh;
+    overflow: hidden;
+    
+}
+
+.header__video video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    z-index: -1;
+    
+}
+.header__cont p{
+    color: var(--black)
 }
 
 .nav__container{
@@ -89,7 +119,7 @@ main{
 .nav__logo{
     font-size: 1.5rem;
     font-weight: 600;
-    color: var(--white);
+    color: black;
 
 }
 
@@ -103,7 +133,7 @@ main{
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    color: var(--white);
+    color: var(--text-light);
 }
 
 .link a{
@@ -129,12 +159,12 @@ main{
     max-width: 800px;
     font-size: 3.5rem;
     line-height: 4rem;
-    color: var(--white);
+    color: black;
 }
 .header__container p{
     margin-bottom: 2rem;
     max-width: 600px;
-    color: var(--white);
+    color: black;
 }
 .header__form{
     width: 100%;
